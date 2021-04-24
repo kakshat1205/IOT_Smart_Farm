@@ -1,7 +1,7 @@
 # IOT_Smart_Farm
 
 ## Components required:
-- Arduino Uno
+- Arduino Uno - Atmega328p
 - ESP 8266
 - 4 Channel 5V Optical Isolated Relay Module 
 - Humidity/Temp Sensor - DHT11
