@@ -48,8 +48,23 @@ Cllient can be any device. Laptop can be used with mqttx and phone can be used w
 - Water_level - Publishes water level in tank
 
 
+
+## Bill Of Materials
+
+| Component Name | Quantity | Approx Price |
+| Arduino Uno | | |
+| ESP 8266 | | |
+| Relay Module | | |
+| Humidity/Temp Sensor - DHT11 | | |
+| Moisture Sensor | | |
+| Water Motor | | |
+| GPRS module | | |
+| Water level sensor | | |
+| Fans/Leds | | |
+
 ## Further mods
 Same solution is being implemented using cc3200 IOT launchpad from TI. Its a state of the art Processor with lower power requirements.
 
 ![image](https://user-images.githubusercontent.com/49076977/115974346-91c27c00-a579-11eb-98de-ddf043d654ad.png)
+
 
