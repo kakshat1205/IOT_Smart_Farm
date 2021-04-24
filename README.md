@@ -19,6 +19,10 @@ Agriculture is done in every country from ages. Agriculture is the science and a
 ### Lets setup ESP with arduino IDE
 Refer This link : instructables.com/Setting-Up-the-Arduino-IDE-to-Program-ESP8266/
 
+![image](https://user-images.githubusercontent.com/49076977/115974328-6d669f80-a579-11eb-982e-fa5de02410ff.png)
+
+## Pin Diagram
+
 ### About MQTT
 With the advent of the 5G era, connecting everything is becoming a reality. Accessing a large number of devices and devices management brings a huge challenge to network broadband, communication protocol and platform service architecture.
 
@@ -27,6 +31,9 @@ MQTT protocol is an IoT messaging protocol based on the publish-subscribe model.
 
 ## How to setup EMQX broker(Pretty descent for small projects)
 https://cloud.emqx.io/console/deployments/ja700e90/overview - Link to my broker
+
+![image](https://user-images.githubusercontent.com/49076977/115974323-62137400-a579-11eb-9fe7-37e046882f54.png)
+
 
 ### Client Info
 Cllient can be any device. Laptop can be used with mqttx and phone can be used with apps on play store.
@@ -40,3 +47,6 @@ Cllient can be any device. Laptop can be used with mqttx and phone can be used w
 
 ## Further mods
 Same solution is being implemented using cc3200 IOT launchpad from TI. Its a state of the art Processor with lower power requirements.
+
+![image](https://user-images.githubusercontent.com/49076977/115974346-91c27c00-a579-11eb-98de-ddf043d654ad.png)
+
