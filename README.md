@@ -33,3 +33,7 @@ Cllient can be any device. Laptop can be used with mqttx and phone can be used w
 - Temp - Publishes Temperaure
 - Moisture - Publishes soil moisture
 - Water_level - Publishes water level in tank
+
+
+## Further mods
+Same solution is being implemented using cc3200 IOT launchpad from TI. Its a state of the art Processor with lower power requirements.
