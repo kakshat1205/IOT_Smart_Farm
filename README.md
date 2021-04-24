@@ -12,6 +12,10 @@
 Refer This link : instructables.com/Setting-Up-the-Arduino-IDE-to-Program-ESP8266/
 
 ### About MQTT
+With the advent of the 5G era, connecting everything is becoming a reality. Accessing a large number of devices and devices management brings a huge challenge to network broadband, communication protocol and platform service architecture.
+
+
+MQTT protocol is an IoT messaging protocol based on the publish-subscribe model. It has occupied half of the IoT protocol because of its simple and easy to implement, supporting QoS and small packet.
 
 ## How to setup EMQX broker
 
