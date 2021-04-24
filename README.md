@@ -3,8 +3,8 @@
 ## Components required:
 - Arduino Uno
 - ESP 8266
-- Relay Module
-- Humidity/Temp Sensor
+- 4 Channel 5V Optical Isolated Relay Module 
+- Humidity/Temp Sensor - DHT11
 - Moisture Sensor
 
 ### Lets setup ESP with arduino IDE
