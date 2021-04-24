@@ -6,6 +6,7 @@
 - 4 Channel 5V Optical Isolated Relay Module 
 - Humidity/Temp Sensor - DHT11
 - Moisture Sensor
+- Water Motor
 
 ### Lets setup ESP with arduino IDE
 Refer This link : instructables.com/Setting-Up-the-Arduino-IDE-to-Program-ESP8266/
