@@ -52,6 +52,7 @@ Cllient can be any device. Laptop can be used with mqttx and phone can be used w
 ## Bill Of Materials
 
 | Component Name | Quantity | Approx Price |
+| --- | --- | --- |
 | Arduino Uno | | |
 | ESP 8266 | | |
 | Relay Module | | |
