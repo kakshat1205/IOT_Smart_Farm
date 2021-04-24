@@ -15,3 +15,4 @@ Refer This link : instructables.com/Setting-Up-the-Arduino-IDE-to-Program-ESP826
 ## How to setup EMQX broker
 
 ### Client Info
+Cllient can be any device. Laptop can be used with mqttx and phone can be used with apps on play store.
