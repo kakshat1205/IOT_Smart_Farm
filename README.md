@@ -27,3 +27,9 @@ https://cloud.emqx.io/console/deployments/ja700e90/overview - Link to my broker
 
 ### Client Info
 Cllient can be any device. Laptop can be used with mqttx and phone can be used with apps on play store.
+
+## Topics
+- Humidity - Basically publish data of humidity from DTH11 Sensor
+- Temp - Publishes Temperaure
+- Moisture - Publishes soil moisture
+- Water_level - Publishes water level in tank
