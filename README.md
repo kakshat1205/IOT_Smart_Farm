@@ -47,7 +47,7 @@ Cllient can be any device. Laptop can be used with mqttx and phone can be used w
 - Moisture - Publishes soil moisture
 - Water_level - Publishes water level in tank
 
-
+## Android Application Buliding
 
 ## Bill Of Materials
 
