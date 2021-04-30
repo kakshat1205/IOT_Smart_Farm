@@ -36,9 +36,9 @@ MQTT protocol is an IoT messaging protocol based on the publish-subscribe model.
 ## How to setup EMQX broker(Pretty descent for small projects)
 https://cloud.emqx.io/console/deployments/ja700e90/overview - Link to my broker
 
-![image](https://user-images.githubusercontent.com/49076977/115974323-62137400-a579-11eb-9fe7-37e046882f54.png)
+![image](https://user-images.githubusercontent.com/49076977/116705826-990adf00-a9ea-11eb-8587-68b46de315cd.png)
 
-![image](https://user-images.githubusercontent.com/49076977/115974383-fe3d7b00-a579-11eb-8837-8aad70fcd60c.png)
+![image](https://user-images.githubusercontent.com/49076977/116705916-b344bd00-a9ea-11eb-996a-5216fada1bc4.png)
 
 
 
@@ -52,8 +52,8 @@ Cllient can be any device. Laptop can be used with mqttx and phone can be used w
 - Water_level - Publishes water level in tank
 
 ## Android Application Buliding
-![image](https://user-images.githubusercontent.com/49076977/116626875-b055b800-a969-11eb-86cb-a5585ffa1720.png | width="200" height="400")
-![image](https://user-images.githubusercontent.com/49076977/116626927-c5324b80-a969-11eb-9332-8268e34d8111.png | width="200" height="400")
+![image](https://user-images.githubusercontent.com/49076977/116626875-b055b800-a969-11eb-86cb-a5585ffa1720.png)
+![image](https://user-images.githubusercontent.com/49076977/116626927-c5324b80-a969-11eb-9332-8268e34d8111.png)
 
 
 ## Bill Of Materials
