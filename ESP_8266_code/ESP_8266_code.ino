@@ -9,12 +9,15 @@ const int mqttPort = 12342;
 const char* mqttUser = "kakshat1205";
 const char* mqttPassword = "kakshat1205";
 
-const char *topic = "humidity";
-const char *topic2 = "temp";
-const char *topic3 = "motor";
-const char *topic4 = "LED_RED";
-const char *topic5 = "LED_BLUE";
-const char *topic6 = "LED_GREEN";
+const char *moisture = "moisture";
+const char *humidity = "humidity";
+const char *temp= "temp";
+const char *motor = "motor";
+const char *level = "level";
+const char *LDR = "LDR";
+const char *LED_RED = "LED_RED";
+const char *LED_BLUE = "LED_BLUE";
+const char *LED_GREEN = "LED_GREEN";
 
 
 WiFiClient espClient;
@@ -62,19 +65,24 @@ void setup() {
   digitalWrite(D0, HIGH);
   digitalWrite(D3, HIGH);
   digitalWrite(D7, HIGH);
-  client.subscribe(topic);
-  client.publish(topic, "hum");
-  client.subscribe(topic2);
-  client.publish(topic2, "tem");
-  //client.subscribe(topic2);
-  client.subscribe(topic3);
-  client.publish(topic3, "on");
-  client.subscribe(topic4);
-  client.publish(topic4, "on");
-  client.subscribe(topic5);
-  client.publish(topic5, "on");
-  client.subscribe(topic6);
-  client.publish(topic6, "on");
+  client.subscribe(moisture);
+  client.publish(moisture, "moisture");
+  client.subscribe(humidity);
+  client.publish(humidity, "humidity");
+  client.subscribe(temp);
+  client.publish(temp, "temp");
+  client.subscribe(LDR);
+  client.publish(LDR, "LDR");
+  client.subscribe(level);
+  client.publish(level, "level");
+  client.subscribe(LED_RED);
+  client.publish(LED_RED, "on");
+  client.subscribe(LED_BLUE);
+  client.publish(LED_BLUE, "on");
+  client.subscribe(motor);
+  client.publish(motor, "on");
+  client.subscribe(LED_GREEN);
+  client.publish(LED_GREEN, "on");
 
 }
 
@@ -109,14 +117,49 @@ void loop() {
       //Wire.write("Hello Arduino");  /* sends hello string */
       //Wire.endTransmission();    /* stop transmitting */
 
-      Wire.requestFrom(8, 1); /* request & read data of size 13 from slave */
+      Wire.requestFrom(8, 5); /* request & read data of size 13 from slave */
       while (Wire.available()) {
-        int c = Wire.read();
+        int M = Wire.read();
+        Serial.println(M);
+        char ptr[10];
+        itoa(M, ptr, 10);
+        client.publish(moisture, ptr);
+        
+        int H = Wire.read();
+        Serial.println(H);
+        char ptr2[10];
+        itoa(H, ptr2, 10);
+        client.publish(humidity, ptr2);
+        
+        int T = Wire.read();
+        Serial.println(T);
+        char ptr3[10];
+        itoa(T, ptr3, 10);
+        client.publish(temp, ptr3);
+        
+        int L = Wire.read();
+        Serial.println(L);
+        char ptr4[10];
+        itoa(L, ptr4, 10);
+        client.publish(LDR, ptr4);
+        
+        int W = Wire.read();
+        Serial.println(W);
+        char ptr5[10];
+        itoa(W, ptr5, 10);
+        client.publish(level, ptr5);
+        
+        //Serial.println(T);
+        
+
+        /*
+        //Serial.println("hi");
+        int c = 0;
         /*if(c <= 25)
           digitalWrite(D4, LOW);
           else
           digitalWrite(D4, HIGH);
-        */
+        
         int c2 = 34;
         char ptr2[10];
         char str[10];
@@ -129,7 +172,7 @@ void loop() {
         //Serial.println(ptr);
         client.publish(topic, ptr);
         client.publish(topic2, ptr2);
-        //Serial.println(s);
+        //Serial.println(s);*/
         ledState = HIGH;
       }
     }
